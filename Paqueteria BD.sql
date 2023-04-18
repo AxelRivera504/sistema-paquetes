@@ -506,7 +506,7 @@ CREATE TABLE Paq.tblEnvios
 (
 		envi_Id					INT IDENTITY (1,1) PRIMARY KEY,
 		envi_Camion				INT			NOT NULL,
-		envi_FechaSalida		DATETIME	NOT NULL,
+		envi_FechaSalida		NVARCHAR(100)	NOT NULL,
 		
 		envi_UsuarioCrea        INT					NOT NULL,
 		envi_FechaCrea          DATETIME			DEFAULT GETDATE(),

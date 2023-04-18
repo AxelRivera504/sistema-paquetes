@@ -17,7 +17,6 @@ namespace Paqueteria.DataAccess.Repositories.Paq
         public tblEnviosPorPaquetes Find(int? id)
         {
             using var db = new PaqueteriaConex();
-
             return db.tblEnviosPorPaquetes.FirstOrDefault(e => e.enpa_Envio == id);
         }
 

@@ -33,7 +33,7 @@ namespace Paqueteria.API.Controllers
         }
 
         [HttpPost("Insertar")]
-        public IActionResult InsertarUsuario(EnviosViewModel enviosViewModel)
+        public IActionResult InsertarEnvio(EnviosViewModel enviosViewModel)
         {
             var item = _mapper.Map<tblEnvios>(enviosViewModel);
             var response = _paqueteriaServices.InsertarEnvio(item);
